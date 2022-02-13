@@ -15,28 +15,44 @@
         <section>
             <form>
                 <label for="initialValue">
-                    <p>Qual valor inicial investido?</p>
+                    <p>Valor inicial</p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="0" name="initialValue" id="initialValue">
+                    R$ <input type="number" placeholder="0.00" name="initialValue" id="initialValue">
                 </p>
-                <label for="taxa">
-                    <p>Qual a taxa de juros aplicada?</p>
+                <label for="repeat">
+                    <p>Aplicação periódica</p>
                 </label>
                 <p>
-                    <input type="number" placeholder="%" name="taxa" id="taxa"> %
-                </p>
-                <label for="type">
-                    <p>Qual o rendimento periódico da aplicação?</p>
-                </label>
-                <p>
-                    <select name="type" id="type">
-                        <option disabled selected>--Selecione</option>
+                    R$ <input type="number" placeholder="0.00" name="repeat" id="repeat">
+                    <select name="repeat" id="repeat">
                         <option value="dia">Diário</option>
                         <option value="mes">Mensal</option>
-                        <option value="ano">Anual</option>
+                        <option value="ano" selected>Anual</option>
                     </select>
                 </p>
+                <label for="taxa">
+                    <p>Taxa de juros</p>
+                </label>
+                <p>
+                    % <input type="number" placeholder="0.00" name="taxa" id="taxa"> 
+                    <select name="taxa" id="taxa">
+                        <option value="dia">Diário</option>
+                        <option value="mes">Mensal</option>
+                        <option value="ano" selected>Anual</option>
+                    </select>
+                </p>
+                <label for="periodo">
+                    <p>Período em</p>
+                </label>
+                <p>
+                    <input type="number" placeholder="0.00" name="periodo" id="periodo"> 
+                    <select name="periodo" id="periodo">
+                        <option value="dia">Dias</option>
+                        <option value="mes">Mês</option>
+                        <option value="ano" selected>Anos</option>
+                    </select>
+                </p> 
                 <button type="submit">Calcular</button>
             </form>
         </section>
