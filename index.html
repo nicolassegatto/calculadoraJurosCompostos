@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Juros Compostos.</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Calculadora de Juros Compostos.</h1>
+            <h4>Projeto JS.</h4>
+        </section>
+        <section>
+            <form>
+                <label for="initialValue">
+                    <p>Qual valor inicial investido?</p>
+                </label>
+                <p>
+                    R$ <input type="number" placeholder="0" name="initialValue" id="initialValue">
+                </p>
+                <label for="taxa">
+                    <p>Qual a taxa de juros aplicada?</p>
+                </label>
+                <p>
+                    <input type="number" placeholder="%" name="taxa" id="taxa"> %
+                </p>
+                <label for="type">
+                    <p>Qual o rendimento periódico da aplicação?</p>
+                </label>
+                <p>
+                    <select name="type" id="type">
+                        <option disabled selected>--Selecione</option>
+                        <option value="dia">Diário</option>
+                        <option value="mes">Mensal</option>
+                        <option value="ano">Anual</option>
+                    </select>
+                </p>
+                <button type="submit">Calcular</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
