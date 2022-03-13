@@ -4,60 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora Juros Compostos.</title>
 </head>
 
 <body>
     <main>
-        <section>
-            <h1>Calculadora de Juros Compostos.</h1>
-            <h4>Projeto JS.</h4>
-        </section>
-        <section>
-            <form>
-                <label for="initialValue">
-                    <p>Valor inicial</p>
-                </label>
-                <p>
-                    R$ <input type="number" placeholder="0.00" name="initialValue" id="initialValue">
-                </p>
-                <label for="repeat">
-                    <p>Aplicação periódica</p>
-                </label>
-                <p>
-                    R$ <input type="number" placeholder="0.00" name="repeat" id="repeat">
-                    <select name="repeat" id="repeat">
-                        <option value="dia">Diário</option>
-                        <option value="mes">Mensal</option>
-                        <option value="ano" selected>Anual</option>
-                    </select>
-                </p>
-                <label for="taxa">
-                    <p>Taxa de juros</p>
-                </label>
-                <p>
-                    % <input type="number" placeholder="0.00" name="taxa" id="taxa">
-                    <select name="taxa" id="taxa">
-                        <option value="dia">Diário</option>
-                        <option value="mes">Mensal</option>
-                        <option value="ano" selected>Anual</option>
-                    </select>
-                </p>
-                <label for="periodo">
-                    <p>Período em</p>
-                </label>
-                <p>
-                    <input type="number" placeholder="0.00" name="periodo" id="periodo">
-                    <select name="periodo" id="periodo">
-                        <option value="dia">Dias</option>
-                        <option value="mes">Mês</option>
-                        <option value="ano" selected>Anos</option>
-                    </select>
-                </p>
-                <button type="submit">Calcular</button>
-            </form>
-        </section>
+        <div id="container">
+            <section>
+                <h1 class="title">Calculadora de Juros Compostos.</h1>
+            </section>
+            <section>
+                <form class ="formJuros">
+                    <label for="initialValue" class="labelInput one">
+                        <p>Valor inicial</p>
+                    </label>
+                    <p class="subOne">
+                        R$ <input class="formInput one" type="number" placeholder="0.00" name="initialValue" id="initialValue">
+                    </p>
+                    <label for="repeat" class="labelInput">
+                        <p>Aplicação periódica</p>
+                    </label>
+                    <p>
+                        R$ <input class="formInput" type="number" placeholder="0.00" name="repeat" id="repeat">
+                        <select name="repeat" id="repeat" class="formSelect">
+                            <option value="dia">Diário</option>
+                            <option value="mes">Mensal</option>
+                            <option value="ano" selected>Anual</option>
+                        </select>
+                    </p>
+                    <label for="taxa" class="labelInput">
+                        <p>Taxa de juros</p>
+                    </label>
+                    <p>
+                        % <input class="formInput" type="number" placeholder="0.00" name="taxa" id="taxa">
+                        <select name="taxa" id="taxa" class="formSelect">
+                            <option value="dia">Diário</option>
+                            <option value="mes">Mensal</option>
+                            <option value="ano" selected>Anual</option>
+                        </select>
+                    </p>
+                    <label for="periodo" class="labelInput">
+                        <p>Período em</p>
+                    </label>
+                    <p>
+                        <input class="formInput" type="number" placeholder="0.00" name="periodo" id="periodo">
+                        <select name="periodo" id="periodo" class="formSelect">
+                            <option value="dia">Dias</option>
+                            <option value="mes">Mês</option>
+                            <option value="ano" selected>Anos</option>
+                        </select>
+                    </p>
+                    <button type="submit" class="formSubmit">Calcular</button>
+                </form>
+            </section>
+        </div>
     </main>
 </body>
 
